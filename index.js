@@ -24,17 +24,22 @@ const classes = [
 ];
 
 var currentColor;
+var currentBtn;
 
 classes.forEach((c) =>
 	document.querySelector(`.${c}`).addEventListener("click", () => {
-		console.log(document.querySelector(`.${c}`).style.backgroundColor);
 		document.querySelector(`.${c}`).style.backgroundColor = currentColor;
 	})
 );
 
 [red, yellow, blue, white, black].forEach((i) =>
 	i.addEventListener("click", () => {
+		if (currentBtn) {
+			currentBtn.classList.toggle("current");
+		}
 		currentColor = i.value;
+		currentBtn = i;
+		i.classList.toggle("current");
 	})
 );
 

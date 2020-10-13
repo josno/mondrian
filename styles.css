@@ -33,18 +33,19 @@ main {
 	align-items: flex-start;
 }
 
-/* 
-h3 {
-	position: absolute;
-	top: -1%;
-	width: 100%;
-} */
+.current {
+	border: 7px solid #87f5fb;
+}
 
 button {
 	border-radius: 0.4rem;
 	height: 2.2rem;
 	border: none;
 	box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 .color-container > button {
