@@ -57,7 +57,6 @@ btn.addEventListener("click", () => {
 
 	canvas.style.gridTemplateColumns = columns.join(" ");
 	canvas.style.gridTemplateRows = rows.join(" ");
-	// canvas.style.gridTemplateAreas = areas;
 });
 
 clear.addEventListener("click", () => {
