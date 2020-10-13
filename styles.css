@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	width: 100%;
+}
+
+.color-container {
+	position: relative;
+	display: grid;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 10px 10px;
+	grid-template-areas:
+		"h3 h3 h3 h3"
+		"red red blue blue"
+		"white white yellow yellow"
+		". . . .";
+	height: 100px;
+	align-items: center;
+}
+
+h3 {
+	grid-area: h3;
+}
+.red {
+	grid-area: red;
+}
+.blue {
+	grid-area: blue;
+}
+.white {
+	grid-area: white;
+}
+.yellow {
+	grid-area: yellow;
+}
+
+h3 {
+	position: absolute;
+	top: -1%;
+	width: 100%;
+}
+
+.color-container > button {
+	margin: 1rem 0px;
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	position: relative;
+	padding: 2rem 2rem;
+	justify-content: space-evenly;
+	font-size: 1rem;
+	text-align: center;
+
+	width: 100%;
+	height: 200px;
+}
+
+.yellow {
+	background-color: #fff001;
+}
+
+.red {
+	background-color: #ff0101;
+}
+
+.blue {
+	background-color: #0101fd;
+}
+
+.white {
+	background-color: #f9f9f9;
+}
+
+.black {
+	background-color: #303030;
+}
+
+.canvas {
+	display: grid;
+	height: 500px;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 600px;
+	border: 10px solid #303030;
+	background-color: #303030;
+	gap: 10px;
+	grid-template-areas:
+		"one one two three four five"
+		"one one two seven six five"
+		"eight nine nine seven six five"
+		"eight ten twelve twelve thirteen thirteen"
+		"eleven ten twelve twelve fourteen fourteen";
+}
+
+.hide {
+	display: none;
+}
+
+.one {
+	grid-area: one;
+	background-color: white;
+}
+
+.two {
+	grid-area: two;
+	background-color: white;
+}
+
+.three {
+	grid-area: three;
+	background-color: white;
+}
+
+.four {
+	grid-area: four;
+	background-color: white;
+}
+
+.five {
+	grid-area: five;
+	background-color: white;
+}
+
+.six {
+	grid-area: six;
+	background-color: white;
+}
+
+.seven {
+	grid-area: seven;
+	background-color: white;
+}
+
+.eight {
+	grid-area: eight;
+	background-color: white;
+}
+
+.nine {
+	grid-area: nine;
+	background-color: white;
+}
+
+.ten {
+	grid-area: ten;
+	background-color: white;
+}
+
+.eleven {
+	grid-area: eleven;
+	background-color: white;
+}
+
+.twelve {
+	grid-area: twelve;
+	background-color: white;
+}
+
+.thirteen {
+	grid-area: thirteen;
+	background-color: white;
+}
+
+.fourteen {
+	grid-area: fourteen;
+	background-color: white;
+}
+
+@media (min-width: 768px) {
+	body {
+		flex-direction: row-reverse;
+	}
+
+	main {
+		margin: 0px 3rem;
+	}
+
+	.panel,
+	.color-container {
+		flex-direction: column;
+	}
+
+	.panel {
+		width: 15rem;
+		height: 100%;
+	}
+
+	.color-container {
+		height: 20rem;
+	}
+}
