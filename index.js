@@ -27,6 +27,7 @@ var currentColor;
 
 classes.forEach((c) =>
 	document.querySelector(`.${c}`).addEventListener("click", () => {
+		console.log(document.querySelector(`.${c}`).style.backgroundColor);
 		document.querySelector(`.${c}`).style.backgroundColor = currentColor;
 	})
 );
@@ -61,6 +62,6 @@ btn.addEventListener("click", () => {
 
 clear.addEventListener("click", () => {
 	classes.forEach(
-		(c) => (document.querySelector(`.${c}`).style.backgroundColor = "white")
+		(c) => (document.querySelector(`.${c}`).style.backgroundColor = "lightgray")
 	);
 });

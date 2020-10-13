@@ -62,14 +62,29 @@ h3 {
 	width: 100%;
 }
 
+button {
+	border-radius: 0.4rem;
+	height: 2.2rem;
+	border: none;
+	box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+}
+
 .color-container > button {
 	margin: 1rem 0px;
+	color: white;
+	font-weight: 600;
+	width: 4.5rem;
+}
+
+.color-container > .white,
+.color-container > .yellow {
+	color: black;
 }
 
 .panel {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid black;
+	background-color: #07beb8;
 	position: relative;
 	padding: 2rem 2rem;
 	justify-content: space-evenly;
@@ -93,7 +108,7 @@ h3 {
 }
 
 .white {
-	background-color: #f9f9f9;
+	background-color: #ffffff;
 }
 
 .black {
@@ -123,72 +138,72 @@ h3 {
 
 .one {
 	grid-area: one;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .two {
 	grid-area: two;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .three {
 	grid-area: three;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .four {
 	grid-area: four;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .five {
 	grid-area: five;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .six {
 	grid-area: six;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .seven {
 	grid-area: seven;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .eight {
 	grid-area: eight;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .nine {
 	grid-area: nine;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .ten {
 	grid-area: ten;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .eleven {
 	grid-area: eleven;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .twelve {
 	grid-area: twelve;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .thirteen {
 	grid-area: thirteen;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .fourteen {
 	grid-area: fourteen;
-	background-color: white;
+	background-color: lightgray;
 }
 
 @media (min-width: 768px) {
