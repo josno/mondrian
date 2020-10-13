@@ -21,46 +21,24 @@ body {
 main {
 	flex-grow: 1;
 	width: 100%;
+	padding: 2rem 1rem 1rem;
 }
 
 .color-container {
 	position: relative;
-	display: grid;
 
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	gap: 10px 10px;
-	grid-template-areas:
-		"h3 h3 h3 h3"
-		"red red blue blue"
-		"white white yellow yellow"
-		". . . .";
-	height: 100px;
-	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
-h3 {
-	grid-area: h3;
-}
-.red {
-	grid-area: red;
-}
-.blue {
-	grid-area: blue;
-}
-.white {
-	grid-area: white;
-}
-.yellow {
-	grid-area: yellow;
-}
-
+/* 
 h3 {
 	position: absolute;
 	top: -1%;
 	width: 100%;
-}
+} */
 
 button {
 	border-radius: 0.4rem;
@@ -70,10 +48,10 @@ button {
 }
 
 .color-container > button {
-	margin: 1rem 0px;
+	margin: 5px auto;
 	color: white;
 	font-weight: 600;
-	width: 4.5rem;
+	width: 3.5rem;
 }
 
 .color-container > .white,
@@ -81,18 +59,23 @@ button {
 	color: black;
 }
 
+h1 {
+	font-size: 1.5rem;
+}
+
 .panel {
-	display: flex;
-	flex-direction: column;
+	padding: 1rem 1rem 1rem 1rem;
 	background-color: #07beb8;
 	position: relative;
-	padding: 2rem 2rem;
 	justify-content: space-evenly;
 	font-size: 1rem;
 	text-align: center;
-
 	width: 100%;
-	height: 200px;
+}
+
+.panel > button {
+	width: 40%;
+	margin: 10px;
 }
 
 .yellow {
@@ -117,8 +100,8 @@ button {
 
 .canvas {
 	display: grid;
-	height: 500px;
-	width: 80%;
+	width: 100%;
+	height: 400px;
 	margin: 0 auto;
 	max-width: 600px;
 	border: 10px solid #303030;
@@ -215,17 +198,51 @@ button {
 		margin: 0px 3rem;
 	}
 
+	h1 {
+		font-size: 1.6rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
 	.panel,
 	.color-container {
 		flex-direction: column;
 	}
 
 	.panel {
-		width: 15rem;
+		width: 25rem;
 		height: 100%;
+		padding: 2rem 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.panel > button {
+		width: 100%;
+		height: 4rem;
+		font-size: 1.1rem;
 	}
 
 	.color-container {
+		margin: 1rem 0px;
 		height: 20rem;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.color-container > button {
+		width: 100%;
+		height: 5rem;
+		width: 100%;
+		height: 3.2rem;
+		font-size: 1.2rem;
+	}
+
+	.canvas {
+		height: 500px;
+		max-width: 800px;
 	}
 }
